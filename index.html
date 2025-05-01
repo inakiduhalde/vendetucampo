@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vende Tu Campo Ya</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header, footer { background: #2c3e50; color: white; padding: 1rem; text-align: center; }
+    nav { background: #34495e; padding: 0.5rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; }
+    section { padding: 2rem; background: white; margin: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h1, h2, h3 { color: #2c3e50; }
+    form { display: flex; flex-direction: column; max-width: 600px; margin: auto; }
+    input, textarea, select, button { margin: 0.5rem 0; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+    button { background-color: #2980b9; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #3498db; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vende Tu Campo Ya</h1>
+    <p>Facilitamos la compra-venta de campos de forma segura y eficiente.</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#publicar">Publicar Campo</a>
+    <a href="#verificados">Campos Verificados</a>
+    <a href="#busqueda">Buscar Campos</a>
+    <a href="#visitas">Agendar Visita</a>
+    <a href="#colaboradores">Colaboradores</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenido a Vende Tu Campo Ya</h2>
+    <p>Esta plataforma conecta compradores y vendedores de campos rurales. Registrate, publica tu campo o busca el ideal para vos.</p>
+  </section>
+
+  <section id="publicar">
+    <h2>Publicar un Campo</h2>
+    <form>
+      <input type="text" placeholder="Título del campo" required>
+      <textarea placeholder="Descripción detallada" required></textarea>
+      <input type="number" placeholder="Precio en USD" required>
+      <input type="text" placeholder="Ubicación (Provincia, Localidad)" required>
+      <input type="file" multiple accept="image/*">
+      <button type="submit">Publicar</button>
+    </form>
+  </section>
+
+  <section id="verificados">
+    <h2>Campos Verificados</h2>
+    <p>Mostramos aquí los campos que han sido validados por nuestro equipo. Garantía de calidad y autenticidad.</p>
+  </section>
+
+  <section id="busqueda">
+    <h2>Buscar Campos</h2>
+    <form>
+      <input type="text" placeholder="Buscar por localidad o provincia">
+      <select>
+        <option>Todos los precios</option>
+        <option>Menos de USD 100.000</option>
+        <option>USD 100.000 - 500.000</option>
+        <option>Más de USD 500.000</option>
+      </select>
+      <button type="submit">Buscar</button>
+    </form>
+  </section>
+
+  <section id="visitas">
+    <h2>Agendar Visitas</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="date" required>
+      <select>
+        <option>Elegí un campo publicado</option>
+        <option>Campo 1</option>
+        <option>Campo 2</option>
+      </select>
+      <button type="submit">Agendar</button>
+    </form>
+  </section>
+
+  <section id="colaboradores">
+    <h2>Beneficios para Colaboradores</h2>
+    <p>Registrate como colaborador para ayudar a validar información y recibir beneficios especiales.</p>
+    <button>Registrarse como Colaborador</button>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto y Contribuciones</h2>
+    <p>¿Querés ayudarnos a mejorar la plataforma? Podés colaborar económicamente de forma ad honorem o contactarnos para sugerencias.</p>
+    <form>
+      <input type="text" placeholder="Nombre">
+      <input type="email" placeholder="Correo electrónico">
+      <textarea placeholder="Tu mensaje o idea"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Vende Tu Campo Ya - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
